@@ -24,7 +24,7 @@ if 'sdist' in sys.argv or 'develop' in sys.argv:
 
 
 def read(*parts):
-    file_path = os.path.join(os.path.dirname(__teaser__), *parts)
+    file_path = os.path.join(os.path.dirname(__file__), *parts)
     return codecs.open(file_path, encoding='utf-8').read()
 
 
