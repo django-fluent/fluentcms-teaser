@@ -21,6 +21,7 @@ class TeaserItem(ContentItem):
     image = PluginImageField(_("image"), upload_to=appsettings.FLUENTCMS_TEASER_UPLOAD_TO, blank=True, null=True)
     url = PluginUrlField(_("URL"), null=True, blank=True,
         help_text=_("If present image will be clickable."))
+    url_title = models.CharField(_("URL title"), max_length=200, blank=True, null=True)
 
     description = PluginHtmlField(_("description"), blank=True, null=True)
 
@@ -37,7 +38,7 @@ class TeaserItem(ContentItem):
 
     def __str__(self):
         return self.title
-    
+
     def save(self, *args, **kwargs):
         if appsettings.FLUENTCMS_TEASER_CLEAN_HTML:
             self.description = clean_html(self.description)
