@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os, re
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+from django.utils.translation import ugettext_lazy as _
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -21,8 +23,6 @@ SECRET_KEY = 'YOUR_SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-TEMPLATE_DEBUG = True
 
 SERVE_MEDIA = True
 
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'mptt',
     'polymorphic',
     'polymorphic_tree',
+    'slug_preview',
     'parler',
 
     'fluent_contents',
@@ -108,7 +109,12 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
+LANGUAGES = (
+    ('en', _('English')),
+    ('es', _('Spanish')),
+    ('fr', _('French')),
+)
 
 TIME_ZONE = 'UTC'
 
@@ -130,8 +136,6 @@ MEDIA_URL = '/media/'
 
 # Absolute path to the directory static files should be collected to.
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
-
-STATIC_URL = '/static/'
 
 STATIC_URL = '/static/'
 
