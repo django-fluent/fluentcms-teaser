@@ -1,4 +1,5 @@
-django
+django<2.0
+django-slug-preview
 django-wysiwyg
 django-any-urlfield
 django-fluent-contents
