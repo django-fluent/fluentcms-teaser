@@ -56,7 +56,7 @@ msgstr "doel"
 
 #: models.py:29
 msgid "same window"
-msgstr "zelde venster"
+msgstr "zelfde venster"
 
 #: models.py:30
 msgid "new window"
