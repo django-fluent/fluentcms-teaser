@@ -6,11 +6,11 @@ A teaser plugin for django-fluent-contents_
 .. image:: https://img.shields.io/pypi/v/fluentcms-teaser.svg
     :target: https://pypi.python.org/pypi/fluentcms-teaser/
 
-.. image:: https://img.shields.io/github/license/bashu/fluentcms-teaser.svg
+.. image:: https://img.shields.io/pypi/dm/fluentcms-teaser.svg
     :target: https://pypi.python.org/pypi/fluentcms-teaser/
 
-.. image:: https://landscape.io/github/bashu/fluentcms-teaser/develop/landscape.svg?style=flat
-    :target: https://landscape.io/github/bashu/fluentcms-teaser/develop
+.. image:: https://img.shields.io/github/license/bashu/fluentcms-teaser.svg
+    :target: https://pypi.python.org/pypi/fluentcms-teaser/
 
 Installation
 ============
