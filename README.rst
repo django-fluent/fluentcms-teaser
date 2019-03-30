@@ -3,6 +3,8 @@ fluentcms-teaser
 
 A teaser plugin for django-fluent-contents_
 
+Authored by `Basil Shubin <https://github.com/bashu>`_, and some great `contributors <https://github.com/bashu/fluentcms-teaser/contributors>`_.
+
 .. image:: https://img.shields.io/pypi/v/fluentcms-teaser.svg
     :target: https://pypi.python.org/pypi/fluentcms-teaser/
 
