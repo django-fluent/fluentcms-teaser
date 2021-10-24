@@ -1,9 +1,5 @@
-# -*- coding: utf-8 -*-
-
-from future.utils import python_2_unicode_compatible
-
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from fluent_contents.extensions import (
     PluginHtmlField, PluginImageField, PluginUrlField)
@@ -14,7 +10,6 @@ from django_wysiwyg.utils import clean_html, sanitize_html
 from . import appsettings
 
 
-@python_2_unicode_compatible
 class TeaserItem(ContentItem):
 
     title = models.CharField(_("title"), max_length=256)
@@ -47,4 +42,4 @@ class TeaserItem(ContentItem):
         if appsettings.FLUENTCMS_TEASER_SANITIZE_HTML:
             self.description = sanitize_html(self.description)
 
-        super(TeaserItem, self).save(*args, **kwargs)
+        super().save(*args, **kwargs)
