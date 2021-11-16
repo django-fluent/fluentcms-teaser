@@ -1,18 +1,19 @@
 fluentcms-teaser
 ================
 
-A teaser plugin for django-fluent-contents_
-
-Authored by `Basil Shubin <https://github.com/bashu>`_, and some great `contributors <https://github.com/bashu/fluentcms-teaser/contributors>`_.
-
+.. image:: https://github.com/django-fluent/fluentcms-teaser/actions/workflows/tests.yaml/badge.svg?branch=master
+    :target: https://github.com/django-fluent/fluentcms-teaser/actions/workflows/tests.yaml
 .. image:: https://img.shields.io/pypi/v/fluentcms-teaser.svg
     :target: https://pypi.python.org/pypi/fluentcms-teaser/
-
-.. image:: https://img.shields.io/pypi/dm/fluentcms-teaser.svg
+.. image:: https://img.shields.io/pypi/l/fluentcms-teaser.svg
     :target: https://pypi.python.org/pypi/fluentcms-teaser/
+.. image:: https://img.shields.io/codecov/c/github/django-fluent/fluentcms-teaser/master.svg
+    :target: https://codecov.io/github/django-fluent/fluentcms-teaser?branch=master
 
-.. image:: https://img.shields.io/github/license/bashu/fluentcms-teaser.svg
-    :target: https://pypi.python.org/pypi/fluentcms-teaser/
+A teaser plugin for django-fluent-contents_
+
+Originally authored by `Basil Shubin <https://github.com/bashu>`_.
+
 
 Installation
 ============
