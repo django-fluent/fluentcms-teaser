@@ -1,8 +1,8 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from django_wysiwyg.utils import clean_html, sanitize_html
 from fluent_contents.extensions import PluginHtmlField, PluginImageField, PluginUrlField
 from fluent_contents.models.db import ContentItem
+from fluent_contents.utils.html import clean_html, sanitize_html
 
 from . import appsettings
 
